@@ -33,34 +33,17 @@
      <div class="row">
        <div class="col-lg-8 mx-auto">
          <ol class="timeline">
-           <li class="timeline-element">
-             <h5 class="font-weight-bold dark-grey-text mb-3">Freelance Développeur back-end Laravel</h5>
-             <p class="grey-text font-small"><em>Deux semaines en Janvier 2021</em></p>
-             <p class="text-muted">Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda ullam adipisci reiciendis porro natus laudantium similique. 
-               Explicabo amet ipsum fugiat aliquam alias.</p>
-           </li>
- 
-           <li class="timeline-element">
-             <h5 class="font-weight-bold dark-grey-text mb-3">Got the first 100 users</h5>
-             <p class="grey-text font-small"><time datetime="2017-08-17">17 Aug 2017</time></p>
-             <p><img class="img-fluid z-depth-1-half rounded" src="https://mdbootstrap.com/img/Photos/Horizontal/Work/12-col/img%20(6).jpg" alt="..."></p>
-             <p class="text-muted">Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda ullam adipisci reiciendis porro natus laudantium similique. 
-               Explicabo amet ipsum fugiat aliquam alias.</p>
-           </li>
- 
-           <li class="timeline-element">
-             <h5 class="font-weight-bold dark-grey-text mb-3">Raised $1.4 million in seed funding</h5>
-             <p class="grey-text font-small"><time datetime="2018-03-26">26 Mar 2019</time></p>
-             <p class="text-muted">Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda ullam adipisci reiciendis porro natus laudantium similique. 
-               Explicabo amet ipsum fugiat aliquam alias.</p>
-           </li>
+         @foreach ( $parcours as $element )
 
            <li class="timeline-element">
-             <h5 class="font-weight-bold dark-grey-text mb-3">Team size increased to 20</h5>
-             <p class="grey-text font-small"><time datetime="2018-04-14">14 Apr 2019</time></p>
-             <p class="text-muted">Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda ullam adipisci reiciendis porro natus laudantium similique. 
-               Explicabo amet ipsum fugiat aliquam alias.</p>
+             <h5 class="font-weight-bold dark-grey-text mb-3">{{ $element->titre }}</h5>
+             <p class="grey-text font-small">Technologies : <em>{{ $element->techno }}</em></p>
+             <p class="grey-text font-small">Entreprise : <em>{{ $element->entreprise }}</em></p>
+             <p class="grey-text font-small"><em>{{ $element->duree }}</em></p>
+             <p class="text-muted">{{ $element->description }}</p>
            </li>
+
+         @endforeach
          </ol>
        </div>
      </div>
