@@ -16,6 +16,8 @@ use App\Http\Controllers\SiteController;
 
 Route::get('/', [SiteController::class, 'home']);
 
+Route::get('/download', [SiteController::class, 'download']);
+
 
 Route::group(['prefix' => 'admin'], function () {
     Voyager::routes();

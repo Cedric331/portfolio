@@ -93,7 +93,7 @@
      <div class="row">
  
        <div class="col-md-6 col-xl-3 mb-4">
-         <div class="card text-center bg-success text-white">
+         <div class="card text-center bg-success text-white loisir">
            <div class="card-body">
              <p class="mt-4 pt-2"><i class="fas fa-gamepad fa-4x"></i></p>
              <h5 class="font-weight-normal my-4 py-2">Jeux Vidéo</h5>
@@ -103,7 +103,7 @@
        </div>
 
        <div class="col-md-6 col-xl-3 mb-4">
-         <div class="card text-center blue text-white">
+         <div class="card text-center blue text-white loisir">
            <div class="card-body">
              <p class="mt-4 pt-2"><i class="fas fa-chess-knight fa-4x"></i></p>
              <h5 class="font-weight-normal my-4 py-2">Jeux de société</h5>
@@ -114,7 +114,7 @@
        </div>
 
        <div class="col-md-6 col-xl-3 mb-4">
-         <div class="card text-center bg-dark text-white">
+         <div class="card text-center bg-dark text-white loisir">
            <div class="card-body">
              <p class="mt-4 pt-2"><i class="fas fa-guitar fa-4x"></i></p>
              <h5 class="font-weight-normal my-4 py-2">Musique</h5>
@@ -124,7 +124,7 @@
        </div>
 
        <div class="col-md-6 col-xl-3 mb-4">
-         <div class="card text-center bg-danger text-white">
+         <div class="card text-center bg-danger text-white loisir">
            <div class="card-body">
              <p class="mt-4 pt-2"><i class="fas fa-film fa-4x"></i></p>
              <h5 class="font-weight-normal my-4 py-2">Cinéphile</h5>

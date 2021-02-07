@@ -2,9 +2,10 @@
 
 namespace App\Http\Controllers;
 
-use App\Models\Competence;
 use App\Models\Parcours;
+use App\Models\Competence;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Storage;
 
 class SiteController extends Controller
 {
@@ -14,5 +15,10 @@ class SiteController extends Controller
       $competences = Competence::All();
 
       return view('welcome', compact('parcours', 'competences'));
+   }
+
+   public function download()
+   {
+      return Storage::download('fichier/CV.pdf');
    }
 }

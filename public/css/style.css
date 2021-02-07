@@ -40,6 +40,9 @@ a{
    color: white !important;
 }
 
+.loisir:hover {
+   border: 2px solid black;
+}
 
 .timeline {
    position: relative;
