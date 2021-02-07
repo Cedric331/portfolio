@@ -17,8 +17,8 @@
                            </div>
                         </div>
                         <div class="col-lg-4">
-                           <p class="font-weight-bold lead text-muted mb-1"><strong>Cédric Lima</strong></p>
-                           <p class="font-weight-bold text-muted">Développeur Web PHP Laravel / Symfony</p>
+                           <p class="font-weight-bold lead mb-1"><strong>Cédric Lima</strong></p>
+                           <p class="font-weight-bold">Développeur Web PHP Laravel / Symfony</p>
                         </div>
                      </div>
                   </div>
@@ -28,7 +28,7 @@
 
 {{-- Parcours --}}
 
-<div class="container bg-white z-depth-1 my-5 py-5 px-4 px-lg-0">
+<div class="container bg-white z-depth-1 my-5 py-5 px-4 px-lg-0" id="experience">
    <section>
      <h2 class="font-weight-bold text-center dark-grey-text pb-2">Mes Expériences</h2>
      <hr class="w-header my-4 bg-primary">
@@ -56,10 +56,9 @@
  {{-- Fin Parcours --}}
 
  {{-- Compétences  --}}
- <div class="container z-depth-1 my-5 p-5">
-
+ <div class="container z-depth-1 my-5 p-5" id="competence">
    <section>
-     
+
        <h2 class="font-weight-bold text-center dark-grey-text pb-2">Mes Compétences</h2>
      <hr class="w-header my-4">
      <div class="row dark-grey-text">
@@ -83,4 +82,64 @@
  </div>
 
  {{-- Fin Compétences --}}
+
+ {{-- Loisirs --}}
+
+ <div class="container my-5" id="loisirs">
+   <section>
+     <h3 class="font-weight-bold text-center dark-grey-text pb-2">Mes Loisirs</h3>
+     <hr class="w-header my-4">
+ 
+     <div class="row">
+ 
+       <div class="col-md-6 col-xl-3 mb-4">
+         <div class="card text-center bg-success text-white">
+           <div class="card-body">
+             <p class="mt-4 pt-2"><i class="fas fa-gamepad fa-4x"></i></p>
+             <h5 class="font-weight-normal my-4 py-2">Jeux Vidéo</h5>
+             <p class="mb-4">Difficile ne pas mettre les jeux vidéo dans mes loirsirs, je suis un joueur depuis tout petit aussi bien sur PC que sur console. Et il est très peu probable que je m'en lasse un jour.</p>
+           </div>
+         </div>
+       </div>
+
+       <div class="col-md-6 col-xl-3 mb-4">
+         <div class="card text-center blue text-white">
+           <div class="card-body">
+             <p class="mt-4 pt-2"><i class="fas fa-chess-knight fa-4x"></i></p>
+             <h5 class="font-weight-normal my-4 py-2">Jeux de société</h5>
+             <p class="mb-4">C'est juste parfait pour animer les soirées, s'instruire, apprendre à connaître les gens, il n'y a que des avantages à jouer à des jeux de société.
+            </p>
+           </div>
+         </div>
+       </div>
+
+       <div class="col-md-6 col-xl-3 mb-4">
+         <div class="card text-center bg-dark text-white">
+           <div class="card-body">
+             <p class="mt-4 pt-2"><i class="fas fa-guitar fa-4x"></i></p>
+             <h5 class="font-weight-normal my-4 py-2">Musique</h5>
+             <p class="mb-4">Avec des amis, nous avons créé un groupe de musique, nous sommes tous débutants, mais on aime jouer ensemble pour le plaisir de jouer et d'apprendre.</p>
+           </div>
+         </div>
+       </div>
+
+       <div class="col-md-6 col-xl-3 mb-4">
+         <div class="card text-center bg-danger text-white">
+           <div class="card-body">
+             <p class="mt-4 pt-2"><i class="fas fa-film fa-4x"></i></p>
+             <h5 class="font-weight-normal my-4 py-2">Cinéphile</h5>
+             <p class="mb-4">Comme beaucoup j'adore regarder des films ou des séries en tout genre, d'ailleurs je n'ai pas trop hésité à prendre un abonnement Netflix ou Amazon Prime.
+            </p>
+           </div>
+         </div>
+       </div>
+
+
+     </div>
+   </section>
+ </div>
+ {{-- Fin Loisirs --}}
+ <button id="top" onClick="buttonTop()" class="btn btn-dark invisible">
+      Revenir en haut
+   </button>
 @endsection

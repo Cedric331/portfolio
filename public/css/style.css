@@ -4,13 +4,42 @@
    box-sizing: border-box;
 }
 
-#home, .dark {
+body{
+   position: relative;
+}
+
+#top{
+   position: sticky;
+   bottom: 10px;
+   left: 10px;
+}
+
+#home, .dark, .dropdown-menu {
    background-color:black;
+}
+
+.dropdown-menu {
+   background-color:black;
+   border: 1px solid white;
+}
+
+.blue{
+   background-color:rgb(59, 49, 194);
 }
 
 .logo{
    height: 90px;
 }
+
+.dropdown-item:hover{
+   color: black !important;
+}
+
+
+a{
+   color: white !important;
+}
+
 
 .timeline {
    position: relative;
