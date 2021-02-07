@@ -34,7 +34,7 @@
        <div class="col-lg-8 mx-auto">
          <ol class="timeline">
            <li class="timeline-element">
-             <h5 class="font-weight-bold dark-grey-text mb-3">Mission Freelance Développeur back-end Laravel</h5>
+             <h5 class="font-weight-bold dark-grey-text mb-3">Freelance Développeur back-end Laravel</h5>
              <p class="grey-text font-small"><em>Deux semaines en Janvier 2021</em></p>
              <p class="text-muted">Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda ullam adipisci reiciendis porro natus laudantium similique. 
                Explicabo amet ipsum fugiat aliquam alias.</p>

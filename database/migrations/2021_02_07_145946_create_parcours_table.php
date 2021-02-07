@@ -16,9 +16,10 @@ class CreateParcoursTable extends Migration
         Schema::create('parcours', function (Blueprint $table) {
             $table->id();
             $table->string('titre');
+            $table->string('entreprise');
             $table->string('techno');
             $table->text('description');
-            $table->date('duree');
+            $table->string('duree');
             $table->timestamps();
         });
     }
