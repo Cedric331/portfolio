@@ -4,9 +4,12 @@
    box-sizing: border-box;
 }
 
-
-#home {
+#home, .dark {
    background-color:black;
+}
+
+.logo{
+   height: 90px;
 }
 
 .timeline {
@@ -24,7 +27,7 @@
    bottom: 0;
    width: 2px;
    margin-left: -1px;
-   background-color: #50a1ff;
+   background-color: #ff5050;
  }
 
  .timeline-element {
@@ -44,7 +47,7 @@
    width: 16px;
    height: 16px;
    border-radius: 50%;
-   border: 2px solid #50a1ff;
+   border: 2px solid #b14d4d;
    background-color: #fff;
  }
 
