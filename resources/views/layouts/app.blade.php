@@ -7,10 +7,12 @@
         <link href="{{ asset('css/style.css') }}" rel="stylesheet">
         <!-- Fonts -->
         <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700&display=swap" rel="stylesheet">
+        {{-- script --}}
+        <script src="https://kit.fontawesome.com/cecf7fd386.js" crossorigin="anonymous"></script>
         <title>PortFolio Cédric Lima</title>
     </head>
     <body class="antialiased">
-      <header>
+      <header class="sticky-top">
          @include('layouts.nav')
       </header>
 

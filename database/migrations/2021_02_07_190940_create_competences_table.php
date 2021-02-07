@@ -4,7 +4,7 @@ use Illuminate\Database\Migrations\Migration;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Support\Facades\Schema;
 
-class CreateParcoursTable extends Migration
+class CreateCompetencesTable extends Migration
 {
     /**
      * Run the migrations.
@@ -13,13 +13,11 @@ class CreateParcoursTable extends Migration
      */
     public function up()
     {
-        Schema::create('parcours', function (Blueprint $table) {
+        Schema::create('competences', function (Blueprint $table) {
             $table->id();
             $table->string('titre');
-            $table->string('entreprise');
-            $table->string('techno')->nullable();
+            $table->string('image');
             $table->text('description');
-            $table->string('duree');
             $table->timestamps();
         });
     }
@@ -31,6 +29,6 @@ class CreateParcoursTable extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('parcours');
+        Schema::dropIfExists('competences');
     }
 }

@@ -28,8 +28,8 @@
 
 <div class="container z-depth-1 my-5 py-5 px-4 px-lg-0">
    <section>
-     <h3 class="font-weight-bold text-center dark-grey-text pb-2">Mon Parcours</h3>
-     <hr class="w-header my-4">
+     <h3 class="font-weight-bold text-center dark-grey-text pb-2">Mes Expériences</h3>
+     <hr class="w-header my-4 bg-primary">
      <div class="row">
        <div class="col-lg-8 mx-auto">
          <ol class="timeline">
@@ -37,7 +37,9 @@
 
            <li class="timeline-element">
              <h5 class="font-weight-bold dark-grey-text mb-3">{{ $element->titre }}</h5>
-             <p class="grey-text font-small">Technologies : <em>{{ $element->techno }}</em></p>
+             @if ($element->techno)
+               <p class="grey-text font-small">Technologies : <em>{{ $element->techno }}</em></p>
+             @endif
              <p class="grey-text font-small">Entreprise : <em>{{ $element->entreprise }}</em></p>
              <p class="grey-text font-small"><em>{{ $element->duree }}</em></p>
              <p class="text-muted">{{ $element->description }}</p>
@@ -47,9 +49,37 @@
          </ol>
        </div>
      </div>
+     <hr class="w-header bg-primary">
+   </section>
+ </div>
+ {{-- Fin Parcours --}}
+
+ {{-- Compétences  --}}
+ <div class="container z-depth-1 my-5 p-5">
+
+   <section>
+     
+       <h3 class="font-weight-bold text-center dark-grey-text pb-2">Mes compétences</h3>
+     <hr class="w-header my-4">
+     <div class="row dark-grey-text">
+ 
+      
+       <div class="col-md-6 col-xl-4 mb-4">
+         <div class="media">
+           <div class="mr-4">
+             <span class="text-primary"><i class="bi bi-align-bottom"></i></span>
+           </div>
+           <div class="media-body">
+             <h6 class="font-weight-bold">Mes compétences</h6>
+             <p class="text-muted">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium eaque ipsa doloremque laudantium.</p>
+           </div>
+         </div>
+       </div>
+ 
+
+     </div>
    </section>
  </div>
 
- {{-- Fin Parcours --}}
-
+ {{-- Fin Compétences --}}
 @endsection

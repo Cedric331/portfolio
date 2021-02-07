@@ -7,7 +7,7 @@
      <div class="collapse navbar-collapse" id="navbarNavDropdown">
        <ul class="navbar-nav">
          <li class="nav-item">
-           <a class="nav-link" href="#">Mon CV</a>
+           <a class="nav-link" href="#">Mes Expériences</a>
          </li>
          <li class="nav-item">
            <a class="nav-link" href="#">PortFolio</a>
