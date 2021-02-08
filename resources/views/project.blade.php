@@ -37,11 +37,19 @@
                <p class="text-muted">{{ $project->techno }}</p>
              </div>
            </li>
-           <li class="d-flex justify-content-center pl-4">
-            <div>
-              <a href="{{ $project->url }}" class="btn btn-primary btn-rounded" target="_blank">Visiter le site</a>
-            </div>
-          </li>
+         @if($project->url != 'null')
+            <li class="d-flex justify-content-center pl-4">
+              <div>
+                <a href="{{ $project->url }}" class="btn btn-primary btn-rounded" target="_blank">Visiter le site</a>
+              </div>
+            </li>
+         @else
+            <li class="d-flex justify-content-center pl-4">
+               <div>
+                 <a href="https://github.com/Cedric331" class="btn btn-primary btn-rounded" target="_blank">Visible sur GitHub</a>
+               </div>
+            </li>
+         @endif
          </ul>
        </div>
      </div>
