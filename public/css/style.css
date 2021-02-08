@@ -12,7 +12,22 @@ body{
 .border-top {
    border-top: 5px solid #434647 !important;
    border-top-left-radius: .25rem!important;
-    border-top-right-radius: .25rem!important;
+   border-top-right-radius: .25rem!important;
+ }
+
+ #contact{
+   transition-duration: 500ms;
+    background-color: rgb(129, 124, 124);
+ }
+
+ #contact:hover{
+   box-shadow: 10px 5px 5px black;
+   transition-duration: 1s;
+ }
+
+ .btn-light:hover{
+      background-color: rgb(34, 33, 33);
+      color: white;
  }
 
 #top{
@@ -42,12 +57,31 @@ body{
    color: black !important;
 }
 
-
 a{
    color: white !important;
 }
 
+.imageProject {
+	-webkit-transform: scale(1);
+	transform: scale(1);
+	-webkit-transition: .3s ease-in-out;
+	transition: .3s ease-in-out;
+}
+.imageProject:hover{
+	-webkit-transform: scale(1.2);
+	transform: scale(1.2);
+}
+
+.loisir{
+   transition-duration: 800ms;
+}
+
+li{
+   list-style-type: none; 
+}
+
 .loisir:hover {
+   transition-duration: 800ms;
    box-shadow: 10px 5px 5px black;
    transform: scale(1, 1.1);
 }

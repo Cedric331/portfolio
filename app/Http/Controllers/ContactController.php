@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+use App\Http\Requests\ContactPostRequest;
 
 class ContactController extends Controller
 {
@@ -14,5 +15,12 @@ class ContactController extends Controller
    public function contact()
    {
       return view('contact');
+   }
+
+   public function submitContact(ContactPostRequest $request)
+   {
+      $request->validated();
+
+
    }
 }

@@ -12,7 +12,7 @@
      <div class="row">
        <div class="col-lg-5 mb-lg-0 mb-5">
          <a href="{{ $project->url }}" target="_blank">
-            <img src="{{ asset('storage/image/'.$project->image) }}" class="img-fluid rounded z-depth-1" alt="Sample project image">
+            <img src="{{ asset('storage/image/'.$project->image) }}" class="img-fluid rounded z-depth-1 imageProject" alt="{{ $project->titre }}">
          </a>
       </div>
 

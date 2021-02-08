@@ -1,7 +1,9 @@
 <?php
 
+use TCG\Voyager\Facades\Voyager;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\SiteController;
+use App\Http\Controllers\ContactController;
 
 /*
 |--------------------------------------------------------------------------
@@ -21,6 +23,7 @@ Route::get('/projets', [SiteController::class, 'projects'])->name('projects');
 Route::get('/download', [SiteController::class, 'download'])->name('download');
 
 Route::get('/contact', [ContactController::class, 'contact'])->name('contact-form');
+Route::post('/contact', [ContactController::class, 'submitContact'])->name('contact-post');
 
 
 Route::group(['prefix' => 'admin'], function () {
