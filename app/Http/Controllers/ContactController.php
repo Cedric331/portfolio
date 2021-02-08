@@ -2,7 +2,9 @@
 
 namespace App\Http\Controllers;
 
+use App\Mail\OrderContact;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Mail;
 use App\Http\Requests\ContactPostRequest;
 
 class ContactController extends Controller
@@ -21,6 +23,6 @@ class ContactController extends Controller
    {
       $request->validated();
 
-
+      Mail::to(env('APP_MAIL'))->send(new OrderContact($request->except('_token')));
    }
 }

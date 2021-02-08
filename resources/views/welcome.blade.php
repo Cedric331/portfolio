@@ -56,7 +56,7 @@
  {{-- Fin Parcours --}}
 
  {{-- Compétences  --}}
- <div class="container z-depth-1 my-5 p-5" id="competence">
+ <div class="container bg-white z-depth-1 my-5 p-5" id="competence">
    <section>
 
        <h2 class="font-weight-bold text-center dark-grey-text pb-2">Mes Compétences</h2>
@@ -85,12 +85,12 @@
 
  {{-- Loisirs --}}
 
- <div class="container my-5" id="loisirs">
+ <div class="container bg-white p-2 my-5" id="loisirs">
    <section>
      <h3 class="font-weight-bold text-center dark-grey-text pb-2">Mes Loisirs</h3>
      <hr class="w-header my-4">
  
-     <div class="row">
+     <div class="row p-2">
  
        <div class="col-md-6 col-xl-3 mb-4">
          <div class="card text-center bg-success text-white loisir">

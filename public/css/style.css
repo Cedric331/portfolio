@@ -7,6 +7,10 @@
 
 body{
    position: relative;
+   background-image: url("../storage/image/fond.jpg");
+   background-size: cover;
+   background-position: center;
+   background-attachment: fixed;
 }
 
 .border-top {
@@ -17,7 +21,7 @@ body{
 
  #contact{
    transition-duration: 500ms;
-    background-color: rgb(129, 124, 124);
+    background-color: rgb(39, 37, 37);
  }
 
  #contact:hover{

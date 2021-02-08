@@ -2,7 +2,7 @@
 
 @section('content')
 
-<div class="container my-5">
+<div class="container p-2 my-5 bg-white">
    <section class="dark-grey-text">
 
      <h3 class="text-center font-weight-bold mb-4 pb-2">Mes Projets</h3>
