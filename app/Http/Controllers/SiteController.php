@@ -19,6 +19,6 @@ class SiteController extends Controller
 
    public function download()
    {
-      return Storage::download('fichier/CV.pdf');
+      return Storage::download('fichier/CV-CedricLima.pdf');
    }
 }

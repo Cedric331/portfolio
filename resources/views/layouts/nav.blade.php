@@ -22,6 +22,9 @@
           <li class="nav-item">
             <a class="nav-link text-white" href="#">Mes Projets</a>
           </li>
+          <li class="nav-item">
+            <a class="nav-link text-white" href="{{ route('download') }}">Télécharger mon CV</a>
+          </li>
          <li class="nav-item">
            <a class="nav-link text-white" href="#">Contact</a>
          </li>
