@@ -83,6 +83,44 @@
 
  {{-- Fin Compétences --}}
 
+ {{-- Diplome --}}
+
+<div class="container mt-5 pt-5" id="diplome">
+    <section class="white-text">
+    <div class="row">
+      
+      <div class="col-12">
+        <div class="card z-depth-2">
+          <div class="card-body p-0">
+            <div class="row mx-0">
+              <div class="col-lg-6 black rounded-left py-5 px-md-5 bg-dark text-white">
+                <h4 class="font-weight-bold ml-3 mb-4 pb-2">Diplôme</h4>
+                <ul class="fa-ul mb-0">
+                  <li class="mb-2"><span class="fa-li"><i class="fas fa-check"></i></span>Développeur web et web mobile niveau 5 (BAC+2)</li>
+                  <li class="mb-2"><span class="fa-li"><i class="fas fa-check"></i></span>BEP vente action marchande</li>
+                </ul>
+              </div>
+
+              <div class="col-lg-6 red accent-3 rounded-right py-5 px-md-5">
+								<h4 class="font-weight-bold ml-3 mb-4 pb-2">Certificats</h4>
+                <ul class="fa-ul mb-0">
+                  <li class="mb-2"><span class="fa-li"><i class="fas fa-check"></i></span>Vue.js 2 - Le guide complet pour débutant - <a class="link-primary text-dark" href="https://www.udemy.com/certificate/UC-6fde0557-5cd7-441b-98cd-87e148c4f57d/" target="_blank">Voir le certificat</a></li>
+                  <li class="mb-2"><span class="fa-li"><i class="fas fa-check"></i></span>Symfony - Créer 4 applications avec Symfony - <a class="link-primary text-dark" href="https://www.udemy.com/certificate/UC-34bcb40a-b71a-4305-b3e0-96fe69bb0213/" target="_blank">Voir le certificat</a></li>
+                  <li class="mb-2"><span class="fa-li"><i class="fas fa-check"></i></span>Apprenez à programmer avec JavaScript - 2019 Openclassrooms</li>
+                  <li class="mb-2"><span class="fa-li"><i class="fas fa-check"></i></span>Apprenez à créer votre site web avec HTML5 et CSS3 - 2014 Openclassrooms</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+    </div>
+  </section>
+</div>
+
+ {{-- Fin Diplome --}}
+
  {{-- Loisirs --}}
 
  <div class="container bg-white p-2 my-5" id="loisirs">
