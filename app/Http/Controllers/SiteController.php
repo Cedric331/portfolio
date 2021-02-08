@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\Projet;
 use App\Models\Parcours;
 use App\Models\Competence;
 use Illuminate\Http\Request;
@@ -15,6 +16,13 @@ class SiteController extends Controller
       $competences = Competence::All();
 
       return view('welcome', compact('parcours', 'competences'));
+   }
+
+   public function projects()
+   {
+      $projects = Projet::All();
+
+      return view('project', compact('projects'));
    }
 
    public function download()

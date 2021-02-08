@@ -14,9 +14,13 @@ use App\Http\Controllers\SiteController;
 |
 */
 
-Route::get('/', [SiteController::class, 'home']);
+Route::get('/', [SiteController::class, 'home'])->name('home');
+
+Route::get('/projets', [SiteController::class, 'projects'])->name('projects');
 
 Route::get('/download', [SiteController::class, 'download'])->name('download');
+
+Route::get('/contact', [ContactController::class, 'contact'])->name('contact-form');
 
 
 Route::group(['prefix' => 'admin'], function () {

@@ -9,6 +9,12 @@ body{
    position: relative;
 }
 
+.border-top {
+   border-top: 5px solid #434647 !important;
+   border-top-left-radius: .25rem!important;
+    border-top-right-radius: .25rem!important;
+ }
+
 #top{
    position: sticky;
    bottom: 10px;

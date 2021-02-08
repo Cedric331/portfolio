@@ -10,25 +10,33 @@
               Information
             </a>
             <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-              <li><a class="dropdown-item" href="#experience">Mes Expériences</a></li>
+              <li><a class="dropdown-item" href="{{ route('home') }}#experience">Mes Expériences</a></li>
               <li><hr class="dropdown-divider"></li>
-              <li><a class="dropdown-item" href="#competence">Mes Compétences</a></li>
+              <li><a class="dropdown-item" href="{{ route('home') }}#competence">Mes Compétences</a></li>
               <li><hr class="dropdown-divider"></li>
-              <li><a class="dropdown-item" href="#diplome">Diplômes et Certificats</a></li>
+              <li><a class="dropdown-item" href="{{ route('home') }}#diplome">Diplômes et Certificats</a></li>
               <li><hr class="dropdown-divider"></li>
-              <li><a class="dropdown-item" href="#loisirs">Mes Loisirs</a></li>
+              <li><a class="dropdown-item" href="{{ route('home') }}#loisirs">Mes Loisirs</a></li>
             </ul>
           </li>
           <li class="nav-item">
-            <a class="nav-link text-white" href="#">Mes Projets</a>
+            <a class="nav-link text-white" href="{{ route('projects') }}">Mes Projets</a>
           </li>
           <li class="nav-item">
             <a class="nav-link text-white" href="{{ route('download') }}">Télécharger mon CV</a>
           </li>
          <li class="nav-item">
-           <a class="nav-link text-white" href="#">Contact</a>
+           <a class="nav-link text-white" href="{{ route('contact-form') }}">Contact</a>
          </li>
        </ul>
      </div>
+     <ul class="navbar-nav">
+         <li class="nav-item">
+            <a class="nav-link text-white" href="https://github.com/Cedric331" target="_blank"><i class="fab fa-github fa-2x"></i></a>
+         </li>
+         <li class="nav-item">
+            <a class="nav-link text-white" href="https://www.linkedin.com/in/cedric-lima/" target="_blank"><i class="fab fa-linkedin fa-2x"></i></a>
+         </li>
+      </ul>
    </div>
  </nav>
