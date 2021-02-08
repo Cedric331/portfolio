@@ -107,7 +107,7 @@
            <div class="card-body">
              <p class="mt-4 pt-2"><i class="fas fa-chess-knight fa-4x"></i></p>
              <h5 class="font-weight-normal my-4 py-2">Jeux de société</h5>
-             <p class="mb-4">C'est juste parfait pour animer les soirées, s'instruire, apprendre à connaître les gens, il n'y a que des avantages à jouer à des jeux de société.
+             <p class="mb-4">J'aime bien jouer à des jeux de société pour animer les soirées, s'instruire, apprendre à connaître les gens, il n'y a que des avantages à jouer à des jeux de société. 
             </p>
            </div>
          </div>

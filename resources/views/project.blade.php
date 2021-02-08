@@ -37,7 +37,7 @@
                <p class="text-muted">{{ $project->techno }}</p>
              </div>
            </li>
-         @if($project->url != 'null')
+         @if($project->url != 'https://github.com/Cedric331')
             <li class="d-flex justify-content-center pl-4">
               <div>
                 <a href="{{ $project->url }}" class="btn btn-primary btn-rounded" target="_blank">Visiter le site</a>
