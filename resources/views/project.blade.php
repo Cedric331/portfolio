@@ -8,9 +8,9 @@
      <h3 class="text-center font-weight-bold mb-4 pb-2">Mes Projets</h3>
      <p class="text-center text-muted w-responsive mx-auto mb-5">Vous pouvez retrouver mes projets ici et également sur mon GitHub.</p>
    
-   @foreach ( $projects as $project )
      <div class="row">
-       <div class="col-lg-5 mb-lg-0 mb-5">
+     @foreach ( $projects as $project )
+      <div class="col-lg-5 mb-lg-0 mb-5">
          <a href="{{ $project->url }}" target="_blank">
             <img src="{{ asset('storage/image/'.$project->image) }}" class="img-fluid rounded z-depth-1 imageProject" alt="{{ $project->titre }}">
          </a>
@@ -52,9 +52,9 @@
          @endif
          </ul>
        </div>
-     </div>
-     <hr class="my-3">
+            <hr class="my-3">
    @endforeach
+     </div>
    </section>
  </div>
 
