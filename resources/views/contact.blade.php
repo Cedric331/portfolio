@@ -2,11 +2,15 @@
 
 @section('content')
 
+
+
 <div class="container my-5">
   <section class="text-center dark-grey-text mb-5">
+         <div id="message" class="bg-success text-white" hidden>
+         
+         </div>
     <div class="card">
       <div class="card-body rounded-top border-top p-5" id="contact">
-
         <h3 class="font-weight-bold my-4 text-white">Contact</h3>
 
         <form class="mb-4 mx-md-5" action="{{ route('contact-post') }}" method="POST">
@@ -64,4 +68,14 @@
   </section>
 </div>
 
+@if(!empty($valid) && $valid == true)
+   <script> 
+   document.getElementById('message').removeAttribute('hidden');
+   document.getElementById('message').innerHTML = 'Merci ! Votre message à bien été envoyé !';
+
+    setTimeout(function() {
+      document.getElementById('message').setAttribute('hidden', '');
+    },6000);
+   </script>
+@endif
 @endsection

@@ -23,6 +23,8 @@ class ContactController extends Controller
    {
       $request->validated();
 
-      Mail::to(env('APP_MAIL'))->send(new OrderContact($request->except('_token')));
+      Mail::to(env('APP_MAIL'))->queue(new OrderContact($request->except('_token')));
+
+      return view('contact' , ['valid' => true]);
    }
 }
