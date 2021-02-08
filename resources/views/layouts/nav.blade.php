@@ -30,13 +30,9 @@
          </li>
        </ul>
      </div>
-     <ul class="navbar-nav">
-         <li class="nav-item">
-            <a class="nav-link text-white" href="https://github.com/Cedric331" target="_blank"><i class="fab fa-github fa-2x"></i></a>
-         </li>
-         <li class="nav-item">
-            <a class="nav-link text-white" href="https://www.linkedin.com/in/cedric-lima/" target="_blank"><i class="fab fa-linkedin fa-2x"></i></a>
-         </li>
-      </ul>
+      <div class="d-flex">
+         <a class="nav-link text-white" href="https://github.com/Cedric331" target="_blank"><i class="fab fa-github fa-2x"></i></a>
+         <a class="nav-link text-white" href="https://www.linkedin.com/in/cedric-lima/" target="_blank"><i class="fab fa-linkedin fa-2x"></i></a>
+      </div>
    </div>
  </nav>
