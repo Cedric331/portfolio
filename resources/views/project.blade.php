@@ -5,20 +5,17 @@
 
 <div class="container mt-5 bg-light p-2">
    <section class="dark-grey-text text-center">
-     <h2 class="font-weight-bold mb-4 pb-2">Mes Projets</h2>
+     <h2 class="font-weight-bold mb-4 mt-2 pb-2">Mes Projets</h2>
      <hr class="w-50 m-auto mb-4">
      <div class="row">
 
       @foreach ( $projects as $project )
-       <div class="col-lg-4 col-md-6 mb-4">
-         <div class="view overlay rounded z-depth-2 mb-4">
-           <img class="img-fluid imageProject" src="{{ asset('storage/image/'.$project->image) }}" alt="{{ $project->titre }}">
-           <a>
-             <div class="mask rgba-white-slight"></div>
-           </a>
+       <div class="col-lg-6 col-md-6 mb-4">
+         <div class="view overlay rounded mb-4">
+           <img class="img-fluid" src="{{ asset('storage/image/'.$project->image) }}" alt="{{ $project->titre }}">
          </div>
  
-         <h4 class="font-weight-bold mb-3"><strong>{{ $project->titre }}</strong></h4>
+         <h4 class="font-weight-bold my-3"><strong>{{ $project->titre }}</strong></h4>
          <p class="dark-grey-text text-muted">{{ $project->techno }}</p>
          <p class="dark-grey-text">{{ $project->description }}</p>
          @if ($project->url != 'https://github.com/Cedric331')
