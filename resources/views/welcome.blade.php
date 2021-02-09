@@ -8,7 +8,7 @@
                      <div class="row">
                            <div class="col-lg-4 mb-2 align-items-center">
                               <div class="avatar white d-flex justify-content-center align-items-center">
-                                <img src="https://mdbootstrap.com/img/Photos/Avatars/img%20%2810%29.jpg" class="rounded-circle img-fluid z-depth-1" alt="woman avatar">
+                                <img src="{{ asset('storage/image/profil.jpg') }}" class="rounded-circle img-fluid z-depth-1 profil" alt="photo Cédric Lima">
                               </div>
                            </div>
                         <div class="col-lg-8 d-flex flex-column justify-content-between">
