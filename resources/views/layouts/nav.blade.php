@@ -31,8 +31,9 @@
        </ul>
      </div>
       <div class="d-flex">
-         <a class="nav-link text-white" href="https://github.com/Cedric331" target="_blank"><i class="fab fa-github fa-2x"></i></a>
-         <a class="nav-link text-white" href="https://www.linkedin.com/in/cedric-lima/" target="_blank"><i class="fab fa-linkedin fa-2x"></i></a>
+         <a class="nav-link text-white" data-bs-toggle="tooltip" data-bs-placement="bottom" title="GitHub" href="https://github.com/Cedric331" target="_blank"><i class="fab fa-github fa-2x"></i></a>
+         <a class="nav-link text-white" data-bs-toggle="tooltip" data-bs-placement="bottom" title="GitLab" href="https://gitlab.com/Cedric331" target="_blank"><i class="fab fa-gitlab fa-2x"></i></a>
+         <a class="nav-link text-white" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Linkedin" href="https://www.linkedin.com/in/cedric-lima/" target="_blank"><i class="fab fa-linkedin fa-2x"></i></a>
       </div>
    </div> 
  </nav>
