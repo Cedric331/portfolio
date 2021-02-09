@@ -2,60 +2,37 @@
 
 @section('content')
 
-<div class="container p-2 my-5 bg-white">
-   <section class="dark-grey-text">
 
-     <h3 class="text-center font-weight-bold mb-4 pb-2">Mes Projets</h3>
-     <p class="text-center text-muted w-responsive mx-auto mb-5">Vous pouvez retrouver mes projets ici et également sur mon GitHub.</p>
-   
+<div class="container mt-5 bg-light p-2">
+   <section class="dark-grey-text text-center">
+     <h2 class="font-weight-bold mb-4 pb-2">Mes Projets</h2>
+     <hr class="w-50 m-auto mb-4">
      <div class="row">
-     @foreach ( $projects as $project )
-      <div class="col-lg-5 mb-lg-0 mb-5">
-         <a href="{{ $project->url }}" target="_blank">
-            <img src="{{ asset('storage/image/'.$project->image) }}" class="img-fluid rounded z-depth-1 imageProject" alt="{{ $project->titre }}">
-         </a>
-      </div>
 
-       <div class="col-lg-7">
+      @foreach ( $projects as $project )
+       <div class="col-lg-4 col-md-6 mb-4">
+         <div class="view overlay rounded z-depth-2 mb-4">
+           <img class="img-fluid imageProject" src="{{ asset('storage/image/'.$project->image) }}" alt="{{ $project->titre }}">
+           <a>
+             <div class="mask rgba-white-slight"></div>
+           </a>
+         </div>
  
-         <ul class="list-unstyled fa-ul mb-0">
-            <li class="d-flex justify-content-center pl-4">
-               <div>
-                 <h3 class="font-weight-bold mb-3">{{ $project->titre }}</h3>
-                 <hr>
-               </div>
-             </li>
-           <li class="d-flex justify-content-center pl-4">
-             <div>
-               <h5 class="font-weight-bold mb-3">Information</h5>
-               <p class="text-muted">{{ $project->description }}</p>
-             </div>
-           </li>
-           <li class="d-flex justify-content-center pl-4">
-             <div>
-               <h5 class="font-weight-bold mb-3">Technologies</h5>
-               <p class="text-muted">{{ $project->techno }}</p>
-             </div>
-           </li>
-         @if($project->url != 'https://github.com/Cedric331')
-            <li class="d-flex justify-content-center pl-4">
-              <div>
-                <a href="{{ $project->url }}" class="btn btn-primary btn-rounded" target="_blank">Visiter le site</a>
-              </div>
-            </li>
+         <h4 class="font-weight-bold mb-3"><strong>{{ $project->titre }}</strong></h4>
+         <p class="dark-grey-text text-muted">{{ $project->techno }}</p>
+         <p class="dark-grey-text">{{ $project->description }}</p>
+          @if ($project->url != 'https://github.com/Cedric331')
+            <a href="{{ $project->url }}" class="linkButton btn btn-dark btn-rounded btn-md" target="_blank">Voir le site</a>
          @else
-            <li class="d-flex justify-content-center pl-4">
-               <div>
-                 <a href="https://github.com/Cedric331" class="btn btn-primary btn-rounded" target="_blank">Visible sur GitHub</a>
-               </div>
-            </li>
+            <a href="https://github.com/Cedric331" class="linkButton btn btn-dark btn-rounded btn-md" target="_blank">Voir sur GitHub</a>
          @endif
-         </ul>
+         
        </div>
-            <hr class="my-3">
-   @endforeach
+       @endforeach
+
      </div>
    </section>
  </div>
+
 
 @endsection

@@ -12,13 +12,13 @@
                               </div>
                            </div>
                         <div class="col-lg-8 d-flex flex-column justify-content-between">
-                         <p class="m-auto">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                         <p class="m-auto">Je me présente, je suis Cédric Lima développeur web junior PHP, j'ai commencé à apprendre le code en 2014 avec le site d'Openclassrooms, n'ayant pas pu poursuivre à ce moment là j'ai travaillé pendant plus de 5 ans avec l'opérateur internet Free. Ayant toujours souhaité travailler dans le développement web, j'ai décidé en 2019 d'effectuer une reconversion professionnelle ce qui m'a amené à suivre une formation avec l'Ifpa de Mérignac pendant 6 mois suite à quoi j'ai obtenu mon dipôme et désormais je suis à la recherche d'un poste ou des missions en tant que développeur web back-end.</p>
                            <div>
                            </div>
                         </div>
                         <div class="col-lg-4">
                            <p class="font-weight-bold lead mb-1"><strong>Cédric Lima</strong></p>
-                           <p class="font-weight-bold">Développeur Web PHP Laravel / Symfony</p>
+                           <p class="font-weight-bold">Développeur Web Back-end PHP Laravel / Symfony</p>
                         </div>
                      </div>
                   </div>
