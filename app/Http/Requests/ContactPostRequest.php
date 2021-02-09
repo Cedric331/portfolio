@@ -28,6 +28,7 @@ class ContactPostRequest extends FormRequest
          'name' => 'required|max:255',
          'email' => 'required|email',
          'message' => 'required|max:1000',
+         'g-recaptcha-response' => 'required|captcha'
       ];
     }
 
@@ -47,6 +48,7 @@ class ContactPostRequest extends FormRequest
             'email.email' => 'L\'adresse email n\'est pas valide',
             'message.required' => 'Un message est requis',
             'message.max' => 'Le message est trop long, il ne doit pas dépasser 1000 caractères',
+            'g-recaptcha-response.required' => 'Le captcha est invalide',
         ];
     }
 }

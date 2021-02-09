@@ -54,7 +54,14 @@
                      </ul>
                   @enderror
                </div>
-
+               <div class="form-group mb-3 d-flex justify-content-center">
+                  {!! NoCaptcha::display(['data-theme' => 'dark']) !!}
+               </div>
+               @error('g-recaptcha-response')
+                  <ul>
+                     <li class="text-danger">{{ $message }}</li>
+                  </ul>
+               @enderror
               <div class="text-center">
                 <button type="submit" class="btn btn-light btn-md">Envoyer</button>
               </div>
@@ -68,6 +75,7 @@
   </section>
 </div>
 
+{!! NoCaptcha::renderJs() !!}
 @if(!empty($valid) && $valid == true)
    <script> 
    document.getElementById('message').removeAttribute('hidden');

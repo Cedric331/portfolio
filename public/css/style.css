@@ -71,9 +71,10 @@ a{
 }
 
 .profil{
-   max-width: 200px;
-   max-height: 200px;
+   width: 150px;
+   clip-path: circle(40%);
 }
+
 
 .imageProject {
 	-webkit-transform: scale(1);

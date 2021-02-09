@@ -7,7 +7,7 @@
                   <div class="col-md-12">
                      <div class="row">
                            <div class="col-lg-4 mb-2 align-items-center">
-                              <div class="avatar white d-flex justify-content-center align-items-center">
+                              <div class="d-flex justify-content-center align-items-center">
                                 <img src="{{ asset('storage/image/profil.jpg') }}" class="rounded-circle img-fluid z-depth-1 profil" alt="photo Cédric Lima">
                               </div>
                            </div>
