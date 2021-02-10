@@ -10,7 +10,7 @@
      <div class="row">
 
       @foreach ( $projects as $project )
-       <div class="col-lg-6 col-md-6 mb-4">
+       <div class="col-lg-4 col-md-12 mb-4">
          <div class="view overlay rounded mb-4">
            <img class="img-fluid" src="{{ asset('storage/image/'.$project->image) }}" alt="{{ $project->titre }}">
          </div>
