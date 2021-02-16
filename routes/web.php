@@ -26,6 +26,6 @@ Route::get('/contact', [ContactController::class, 'contact'])->name('contact-for
 Route::post('/contact', [ContactController::class, 'submitContact'])->name('contact-post');
 
 
-Route::group(['prefix' => 'admin'], function () {
+Route::group(['prefix' => 'adminvoyager'], function () {
     Voyager::routes();
 });

@@ -18,10 +18,12 @@
          <h4 class="font-weight-bold my-3"><strong>{{ $project->titre }}</strong></h4>
          <p class="dark-grey-text text-muted">{{ $project->techno }}</p>
          <p class="dark-grey-text">{{ $project->description }}</p>
-         @if ($project->url != 'https://github.com/Cedric331')
+         @if ($project->url != 'https://github.com/Cedric331' && !empty($project->url))
             <a href="{{ $project->url }}" class="linkButton btn btn-dark btn-rounded btn-md" target="_blank">Voir le site</a>
-         @else
+         @elseif($project->url == 'https://github.com/Cedric331')
             <a href="https://github.com/Cedric331" class="linkButton btn btn-dark btn-rounded btn-md" target="_blank">Voir sur GitHub</a>
+         @else
+            <p>Non disponible</p>    
          @endif
        </div>
        @endforeach
