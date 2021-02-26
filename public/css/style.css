@@ -18,6 +18,7 @@ body{
    border-top-left-radius: .25rem!important;
    border-top-right-radius: .25rem!important;
  }
+ 
 
  #contact{
    transition-duration: 500ms;
@@ -140,6 +141,24 @@ li{
    padding-right: 0;
    text-align: left;
  }
+
+ video {
+   z-index:-1;
+   min-width: 100%; min-height: 100%;
+   width: auto; height: auto; z-index: -100;
+   background-size: cover;
+   position: fixed;
+ }
+
+ #vidpause{
+   position: fixed;
+   bottom: 10px;
+   right: 10px;
+ }
+
+ @media screen and (max-width: 800px) {
+   video { display: none; }
+   }
 
  @media (max-width: 767.98px) {
    .timeline::before {

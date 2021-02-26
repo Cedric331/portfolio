@@ -179,5 +179,5 @@
  {{-- Fin Loisirs --}}
  <button id="top" onClick="buttonTop()" class="btn btn-dark invisible">
       Revenir en haut
-   </button>
+ </button>
 @endsection
